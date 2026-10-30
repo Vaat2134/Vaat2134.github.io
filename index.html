@@ -4,150 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria Andagua | Portfolio</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <title>Victoria Andagua | Pixel Portfolio</title>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0d1117;
-            color: #e6edf3;
-        }
+    <link rel="stylesheet" href="css/style.css">
 
-        header {
-            text-align: center;
-            padding: 70px 20px;
-            background: #161b22;
-        }
-
-        header h1 {
-            font-size: 38px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            color: #8b949e;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 35px 20px;
-        }
-
-        h2 {
-            color: #58a6ff;
-        }
-
-        .proyectos {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            padding: 22px;
-        }
-
-        .card p {
-            color: #8b949e;
-            line-height: 1.6;
-        }
-
-        .tecnologias {
-            color: #58a6ff;
-            font-size: 13px;
-        }
-
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #8b949e;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <h1>¡Hola! Soy Victoria Andagua 👋</h1>
-    <p>Estudiante de Ingeniería de Software</p>
-    <p> Ecuador | Software Development</p>
+    <div class="stars"></div>
 
-    <a href="https://www.linkedin.com/in/victoria-andagua-tenelanda-89294540a/">LinkedIn</a> |
-    
-</header>
+    <nav class="navbar">
+        <a href="#inicio" class="logo">VICKY<span>_</span></a>
 
-<main class="container">
-
-    <h2>Sobre mí</h2>
-
-    <p>
-        Me interesa el desarrollo de software,
-        la programación y las nuevas tecnologías.
-        Siempre estoy aprendiendo y desarrollando
-        nuevos proyectos.
-    </p>
-
-    <h2>💻 Mis proyectos</h2>
-
-    <div class="proyectos">
-
-        <div class="card">
-            <h3>🚌 EcuaRutas</h3>
-            <p>
-                Sistema de gestión de rutas,
-                viajes y disponibilidad de transporte.
-            </p>
-            <div class="tecnologias">
-                Angular · .NET · SQL Server
-            </div>
-            <br>
-            <a href="https://github.com/JuanFull1/EcuaRutas.git">
-                Ver repositorio →
-            </a>
+        <div class="nav-links">
+            <a href="#inicio">INICIO</a>
+            <a href="#sobre-mi">SOBRE MÍ</a>
+            <a href="#proyectos">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
         </div>
+    </nav>
 
-    </div>
+    <main>
 
-    <h2>🛠️ Tecnologías</h2>
+        <!-- INICIO -->
+        <section class="hero" id="inicio">
 
-    <p>
-        Java · Python · JavaScript · HTML · CSS ·
-        MariaDB · SQL · Git
-    </p>
+            <div class="hero-image reveal">
+                <img src="assets/images/victoria-pixel.png"
+                     alt="Victoria en versión pixel art">
+            </div>
 
-    <h2>📩 Contacto</h2>
+            <div class="hero-content reveal">
 
-    <p>
-        Correo:
-        <a href="mailto:victoriaandagua@gmail.com">
-            victoriaandagua@gmail.com
-        </a>
-    </p>
+                <span class="tag">PLAYER 01 · SOFTWARE DEVELOPER</span>
 
-</main>
+                <h1>Hola, soy<br>
+                    <span>Victoria Andagua</span>
+                </h1>
 
-<footer>
-    © 2026 Victoria Andagua | GitHub Portfolio
-</footer>
+                <p>
+                    Transformo ideas en código
+                    y el código en soluciones.
+                    ¡Bienvenido a mi mundo!
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="pixel-button">
+                        EXPLORAR PROYECTOS →
+                    </a>
+                </div>
+
+                <div class="status">
+                    <span class="online"></span>
+                    Disponible para aprender y crear
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section class="section" id="sobre-mi">
+
+            <h2 class="section-title reveal">01. SOBRE MÍ</h2>
+
+            <div class="about-card reveal">
+
+                <div class="about-avatar">
+                    <img src="assets/images/victoria-pixel.png"
+                         alt="Avatar pixel art de Victoria">
+                </div>
+
+                <div class="about-text">
+                    <h3>¡Hola, aventurero!</h3>
+
+                    <p>
+                        Soy Victoria, estudiante de Ingeniería
+                        de Software. Me apasiona la programación,
+                        el desarrollo de software y la tecnología.
+                    </p>
+
+                    <p>
+                        Me gusta aprender cosas nuevas,
+                        resolver problemas y convertir
+                        ideas en proyectos.
+                    </p>
+
+                    <p class="quote">
+                        "Grandes ideas también empiezan
+                        con un solo paso..."
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TECNOLOGIAS -->
+        <section class="section" id="habilidades">
+
+            <h2 class="section-title reveal">02. MI INVENTARIO</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill reveal">☕ Java</div>
+                <div class="skill reveal">🐍 Python</div>
+                <div class="skill reveal">🌐 HTML5</div>
+                <div class="skill reveal">🎨 CSS3</div>
+                <div class="skill reveal">⚡ JavaScript</div>
+                <div class="skill reveal">🗄️ MariaDB</div>
+                <div class="skill reveal">🔧 Git</div>
+                <div class="skill reveal">💻 SQL</div>
+
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="section" id="proyectos">
+
+            <h2 class="section-title reveal">03. NIVELES DESBLOQUEADOS</h2>
+
+            <p class="section-description">
+                Cada proyecto es una nueva aventura.
+            </p>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal">
+                    <span class="level">LEVEL 01</span>
+                    <div class="project-icon">🚌</div>
+
+                    <h3>EcuaRutas</h3>
+
+                    <p>
+                        Sistema de gestión de rutas,
+                        viajes y disponibilidad de transporte.
+                    </p>
+
+                    <span class="project-tech">
+                        ANGULAR · .NET · SQL SERVER
+                    </span>
+
+                    <a href="https://github.com/JuanFull1/EcuaRutas.git"
+                       target="_blank">
+                        VER REPOSITORIO →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section contact" id="contacto">
+
+            <h2 class="section-title reveal">04. ¿JUGAMOS?</h2>
+
+            <p class="reveal">
+                ¿Tienes una idea o quieres colaborar?
+                ¡Conectemos!
+            </p>
+
+            <a href="mailto:victoriaandagua@gmail.com"
+               class="pixel-button reveal">
+                ENVIAR MENSAJE
+            </a>
+
+            <div class="social-links">
+                <a href="https://github.com/vaat2134" target="_blank">
+                    GITHUB
+                </a>
+
+                <a href="https://www.linkedin.com/in/victoria-andagua-tenelanda-89294540a/" target="_blank">
+                    LINKEDIN
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 VICTORIA ANDAGUA</p>
+       
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
